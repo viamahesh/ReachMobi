@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latest Weather Forecasts | Enter Your Zip</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/global.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="left-column">
+            <div id="slideshow">
+                <div><img src="public/images/img-1.png"></div>
+                <div><img src="public/images/img-2.png"></div>
+                <div><img src="public/images/img-3.png"></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <p class="temp-value">19&#176;</p>
+            <p class="additional-data">
+                <span>Olathe, KS</span>
+                <span>Tuesday 9:00 PM</span>
+                <span>Clear</span>
+            </p>
+            <p class="default-text">Access Latest Weather Forecast From Your Mobile. Enter Zip to Download Now!</p>
+            <form>
+                <input type="tel" name="zip" class="input-text" placeholder="Zipcode" maxlength="5" onkeypress="return isNumberKey(event)" />
+                <input type="button" value="Download" name="submit" class="submit-button" disabled />
+            </form>
+            <p class="disclaimer-text">Disclaimer: By clicking the button above, you are agreeing to install this extension and agreeing to abide by the <a href="#">EULA</a> and <a href="#">Privacy Policy.</a></p>
+            <h1 class="logo"><span class="invisible">Active Alerts</span></h1>
+            <p class="total-downloads-holder"><span class="total-downloads">Total Downloads<span class="figure">0</span></span></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="public/js/scripts.js"></script>
+</body>
+</html>
